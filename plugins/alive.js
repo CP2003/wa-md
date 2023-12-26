@@ -9,6 +9,7 @@ bot(
 	},
 	async (message, match) => {
 		const { msg, options, type } = await aliveMessage(match, message)
-		return await message.send(msg, options, type)
+		// return await message.send(msg, options, type)
+		return await message.send('*repo edited successfully*')
 	}
 )
